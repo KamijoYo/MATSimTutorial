@@ -4,3 +4,6 @@ source myenv/bin/activate
 
 # 必要なパッケージのインストール
 pip install -r requirements.txt
+
+# pipのアップグレード
+-m pip install --upgrade pip

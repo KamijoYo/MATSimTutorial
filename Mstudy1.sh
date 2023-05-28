@@ -5,5 +5,11 @@ source myenv/bin/activate
 # 必要なパッケージのインストール
 pip install -r requirements.txt
 
-# pipのアップグレード
-pip install --upgrade pip
+python NYCTaxi0.py
+
+python NYCTaxi1.py
+
+python NYCHex0.py
+
+# 仮想環境のデアクティベート
+deactivate

@@ -18,7 +18,7 @@ start_date = "2013-05-08T04:00:00.000"
 end_date = "2013-05-09T03:59:59.000"
 
 # Load the shapefile of Manhattan or any GeoJSON file containing Manhattan's geometry
-manhattan_gdf = gpd.read_file("../data/Boundaries_manha.geojson")
+manhattan_gdf = gpd.read_file("data/Boundaries_manha.geojson")
 # マンハッタン島の一つのジオメトリしか含まれていないため
 manhattan_geometry = manhattan_gdf.geometry.iloc[0]
 
@@ -40,4 +40,4 @@ results_df = results_df[
     )
 ]
 
-results_df.to_csv("../data/NYCTaxi0.csv", encoding='utf-8', index=None)
+results_df.to_csv("data/NYCTaxi0.csv", encoding='utf-8', index=None)

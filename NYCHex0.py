@@ -31,7 +31,7 @@ def hex_to_center_lng(h):
     return lng
 
 # Load the shapefile of Manhattan or any GeoJSON file containing Manhattan's geometry
-manhattan_gdf = gpd.read_file("../data/Boundaries_manha.geojson")
+manhattan_gdf = gpd.read_file("data/Boundaries_manha.geojson")
 manhattan_geometry = manhattan_gdf.geometry.iloc[0]
 
 df = pd.DataFrame(hexagons, columns=['hex_id'])
@@ -51,7 +51,7 @@ df.drop(columns=['center_point'], inplace=True)
 gdf = gpd.GeoDataFrame(df, geometry='geometry')
 
 # ファイルに書き出す
-gdf.to_file("../data/NYCHex0.shp")
+gdf.to_file("data/NYCHex0.shp")
 
 # ファイルに書き出す（CSV）
-df.to_csv("../data/NYCHex0.csv", index=False)
+df.to_csv("data/NYCHex0.csv", index=False)

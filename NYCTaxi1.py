@@ -4,7 +4,7 @@ from pyproj import Transformer
 transformer = Transformer.from_crs('epsg:4326', 'epsg:2263')
 
 # CSVファイルを読み込む
-df = pd.read_csv('../data/NYCTaxi0.csv')
+df = pd.read_csv('data/NYCTaxi0.csv')
 
 # pickupとdropが同じ座標である行の数をカウントする
 same_coord_count = df[(df['pickup_longitude'] == df['dropoff_longitude']) & (df['pickup_latitude'] == df['dropoff_latitude'])].shape[0]
@@ -54,7 +54,7 @@ new_df = pd.DataFrame({
 })
 
 # データフレームをCSVファイルとして出力する
-df.to_csv('../data/NYCTaxi1_sub.csv', encoding='utf-8', index=False)
+df.to_csv('data/NYCTaxi1_sub.csv', encoding='utf-8', index=False)
 
 # データフレームをCSVファイルとして出力する
-new_df.to_csv('../data/NYCTaxi1_'+str(len(new_df))+'.csv', encoding='utf-8', index=False)
+new_df.to_csv('data/NYCTaxi1_'+str(len(new_df))+'.csv', encoding='utf-8', index=False)

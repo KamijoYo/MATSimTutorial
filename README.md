@@ -47,7 +47,7 @@ manhattan.osm.pbfを開き、Convert to MATSim layerでMATSim用のネットワ�
 # Mstudy3
 ### 準備
 面倒ですが  
-Mstudy3/src/内の.javaファイルを事前に実行したRunMatsim.javaと同じフォルダにコピー。  
+Mstudy3/src/内の.javaファイルを事前に実行したRunMatsim.javaと同じフォルダにコピー。(コピー後にプロジェクトをRefresh）
 Mstudy3/data/内のファイルをscenarios/equil/config.xmlと同じフォルダにコピー。
 ### インプットデータの生成
 1. MakePlan.javaを実行して、2013年5月8日のタクシーのODに基づくplanファイルを生成。

@@ -6,9 +6,7 @@ source myenv/bin/activate
 pip install -r requirements.txt
 
 python NYCTaxi0.py
-
 python NYCTaxi1.py
-
 python NYCHex0.py
 
 # 仮想環境のデアクティベート

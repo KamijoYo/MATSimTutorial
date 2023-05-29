@@ -1,6 +1,6 @@
 # 事前準備
 手順としては[MATSim公式ページ](https://www.matsim.org/downloads/)の“Use MATSim as a programmer out of an IDE”に従って、installの1.~5.までを実行。  
-IDEに関しては[eclipse](https://www.eclipse.org/downloads/)をインストール。
+IDEに関しては、IntelliJ、もしくは[eclipse](https://www.eclipse.org/downloads/)をインストール。
 ### 私も教わりながらで
 皆さんが手元で実行しやすい共有方法などに詳しいわけではなく、環境によって手順通りにいかない可能性が大いにあります。
 プログラミングは自己流で進めてばかりいたので、「こうしたらよりスマート」など適時私に教えていただけたら嬉しいです。
